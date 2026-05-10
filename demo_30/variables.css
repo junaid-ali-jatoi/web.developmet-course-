@@ -1,0 +1,35 @@
+:root{
+    --color:rgb(42, 42, 143);
+    /* --seccolor:rgb(214, 214, 154); */
+    /* root men hun global variable banate hen  */
+    /* Hum is men koi bhi property control kr sakte hen bs hamen wo aik variable banana he aur us ki aik proper value deni he us ke baad hum use kahee pe bhi aply kr sakte hen */
+
+}
+*{
+    margin: 0;                  
+    padding: 0;
+}
+.nav{
+    /* background-color: aquamarine; */
+    background-color: var(--seccolor,orange);
+    border: 2px solid var(--color);
+    
+}
+
+ul{
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 20px 55px 20px ;
+}
+
+ul li:first-child{
+    --color:rgba(110, 5, 170, 0.616);
+    background-color: var(--color);
+}
+.container{
+    /* background-color:--color: rgba(44, 158, 82, 0.363);  */
+    background-color: var(--color);
+}
